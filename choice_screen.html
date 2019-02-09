@@ -2,7 +2,9 @@
     <header>
         <script src="assets/jquery/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/choose_screen.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+        <link res="stylesheet" type="text/css" href="CSS/choose_screen.css">
     </header>
     <body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -32,13 +34,34 @@
         <!-- Page Content -->
         <div class="container">
 
-            <!-- Page Heading -->
-            <h1 class="my-4">Page Heading
-            <small>Secondary Text</small>
-            </h1>
-        
+        <div class="container">
+            <h1 class="my-4">Filter les resultats</h1>
             <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="col-lg-12 col-sm-6 col-xs-6 mb-4">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="job" value="job" checked onclick="f_select('jobs')">
+                        <label class="form-check-label" for="job">Decouvrir un metier</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="hobby" value="hobby" checked onclick="f_select('hobby')">
+                        <label class="form-check-label" for="job">Decouvrir un hobby</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="project" value="project" checked onclick="f_select('project')">
+                        <label class="form-check-label" for="job">Preparer un projet</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="help" value="help" checked onclick="f_select('help')">
+                        <label class="form-check-label" for="job">Chercher un accompagnant</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4 token help">
                 <div class="card h-100">
                 <a href="#"><img class="card-img-top" src="images/Accolade.jpg" alt=""></a>
                 <div class="card-body">
@@ -49,7 +72,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-4 col-sm-6 mb-4 token project">
                 <div class="card h-100">
                 <a href="#"><img class="card-img-top" src="images/mont_blanc.jpg" alt=""></a>
                 <div class="card-body">
@@ -61,7 +84,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-4 col-sm-6 mb-4 token help">
                 <div class="card h-100">
                 <a href="#"><img class="card-img-top" src="images/stallman.jpg" alt=""></a>
                 <div class="card-body">
@@ -73,7 +96,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-4 col-sm-6 mb-4 token hobby">
                 <div class="card h-100">
                 <a href="#"><img class="card-img-top" src="images/yoga.jpg" alt=""></a>
                 <div class="card-body">
@@ -84,7 +107,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-4 col-sm-6 mb-4 token help">
                 <div class="card h-100">
                 <a href="#"><img class="card-img-top" src="images/fsf.jpg" alt=""></a>
                 <div class="card-body">
@@ -95,7 +118,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-4 col-sm-6 mb-4 token jobs">
                 <div class="card h-100">
                 <a href="#"><img class="card-img-top" src="images/linus.jpg" alt=""></a>
                 <div class="card-body">
@@ -109,9 +132,7 @@
                 </div>
             </div>
             </div>
-            <!-- /.row -->
-        
-            <!-- Pagination -->
+
             <ul class="pagination justify-content-center">
             <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
@@ -137,7 +158,6 @@
             </ul>
         
         </div>
-        <!-- /.container -->
 
     </body>
 </html>
