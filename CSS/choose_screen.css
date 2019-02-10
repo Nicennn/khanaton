@@ -5,3 +5,8 @@
 #name {
     text-decoration: none!important;
 }
+
+.image {
+    height: 20%!important;
+    overflow: hidden;
+}
