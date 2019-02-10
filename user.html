@@ -2,8 +2,9 @@
 <html>
 	<header>
        		<script src="assets/jquery/jquery.min.js"></script>
-        	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-        	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+					<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+					<script src="assets/js/login.js"></script>
+					<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="CSS/user.css">
 	</header>
 		<body>
@@ -15,35 +16,38 @@
 		             <!-- Background image for card set in CSS! -->
 		          </div>
 		          <div class="card-body">
-		            <h5 class="card-title text-center">Register</h5>
+		            <h5 class="card-title text-center">Creer un compte</h5>
 		            <form class="form-signin">
 		              <div class="form-label-group">
-		                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
-		                <label for="inputUserame">Username</label>
+		                <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+		                <label for="inputUsername">Pseudo</label>
 		              </div>
 		
 		              <div class="form-label-group">
 		                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-		                <label for="inputEmail">Email address</label>
+		                <label for="inputEmail">Address email</label>
 		              </div>
 		              
 		              <hr>
 		
 		              <div class="form-label-group">
 		                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-		                <label for="inputPassword">Password</label>
+		                <label for="inputPassword">Mot de passe</label>
 		              </div>
 		              
 		              <div class="form-label-group">
 		                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
-		                <label for="inputConfirmPassword">Confirm password</label>
+		                <label for="inputConfirmPassword">Confirmer le mote de passe</label>
+									</div>
+
+		              <hr class="my-4">
+		              <div class="form-label-group">
+		                <input type="password" id="inputInvitation" class="form-control" placeholder="Code d'invitation" required>
+		                <label for="inputInvitation">Code d'invitation</label>
 		              </div>
 		
-		              <a href="choice_screen.html" class="btn btn-lg btn-primary btn-block text-uppercase">Register</button>
-		              <a class="d-block text-center mt-2 small" href="#">Sign In</a>
-		              <hr class="my-4">
-		              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign up with Google</button>
-		              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign up with Facebook</button>
+		              <a class="btn btn-lg btn-primary btn-block text-uppercase" onclick="valid()">Creer mon compte</a>
+		              <a class="d-block text-center mt-2 small" href="#">J'ai deja un compte</a>
 		            </form>
 		          </div>
 		        </div>
